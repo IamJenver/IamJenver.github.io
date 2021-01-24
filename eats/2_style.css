@@ -347,9 +347,6 @@ textarea {
 img {
     vertical-align: middle;
 }
-A {
-    text-decoration: none;
-}
 
 fieldset {
     border: 0;
@@ -369,14 +366,12 @@ textarea {
 }
 
 /* roboto-regular - latin */
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /* common start -нормализация размеров блоков*/
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
- 
+
 } 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -391,22 +386,28 @@ body {
     }
     /*-------------fixed menu start----------------*/
 header {
+    position: fixed;
     display: flex;
-    position:fixed;
-    background-color: white;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 72px;
+    background-color: white;
     box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+a {
+    text-decoration: none;
 }
 .container-header {
     position: fixed;
-    display: flex;
+   display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 960px;
     width:100%;
+   }
+   .logo {
+       width: 120px;
    }
 .left-buttons {
     width: 134px;
@@ -414,7 +415,7 @@ header {
     justify-content: space-between;
     align-items: center;
   }
-.button_sign_in {
+  .button_sign_in {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,8 +425,6 @@ header {
     color: black;
     height: 40px;
     width: 78px;
-    
-    
 }
 .enter {
     background: white;
@@ -441,12 +440,12 @@ header {
         /*-------------fixed menu end----------------*/
         /*------------- searh start------------------*/
      .search-section {
-         padding-top: 120px;
-         width:100%;
+        padding-top: 104px;
+                 width:100%;
          height: 48px;
         display: flex;
         align-items: flex-end;
-         
+
          color: #626262;
          font-size: 16px;
        } 
@@ -458,33 +457,81 @@ header {
               }
 
     .search-line {
-        margin-top: 80px;
-        width: 100%;
+                width: 100%;
         border: none;
         border-bottom: 1px solid #757575; 
        }
+       /*--------------search end-----------------*/
+       /*--------------name main page start-------*/
+
       .page-name {
-        margin-top: 50px;
         width:100%;
-        height: 48px;
+        height: 34px;
+        margin-top: 56px;
+        margin-bottom: 16px;
       }
-      .page-name_container {
+      .page-name_text {
         margin: 0 auto;
         max-width: 960px;
         width: 100%;
-        justify-content: center;
-        align-items: center;
 
         color: #1d1d1d;
-        font-size: 34px;
-        font-family: 'Roboto';
+        font-size: 22px;
+        line-height: 34px;
+        font-family: 'Roboto', sans-serif;
       }
+        /*--------------name page end------------*/
+        /*--------------cards start--------------*/
       .cards-container {
         margin: 0 auto;
+        padding-top: 16px;
         max-width: 960px;
         width: 100%;
-        justify-content: center;
-        align-items: center; 
+           }
+
+      .card {
+          width: 308px;
+          height: 365px;
+          margin: 0 auto;
       }
-      
-   
+      .img_card {
+margin-bottom: 16px;
+
+      }
+
+      .card-name {
+        color: #1d1d1d;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .card-discription {
+        color: #626262;
+        font-size: 14px;
+        line-height: 21px;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .card-time {
+        color: #1d1d1d;
+        font-size: 13px;
+        line-height: 21px;
+        font-family: 'Roboto', sans-serif;
+      }
+      /*---------------cards end-----------*/
+      /*---------------footer start---------*/
+      footer {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            background-color: #262626;
+          }
+      .container-footer {
+        display: flex;
+        align-items: center;
+        max-width: 960px;
+        width:100%; 
+        height: 116px;
+        border-bottom: 1px solid white; 
+      }

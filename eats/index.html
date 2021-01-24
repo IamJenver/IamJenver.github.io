@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/2_style.css">
     <title>Uber Eats</title>
 </head>
 <body>
@@ -17,8 +17,8 @@
          </div>
          <div class="left-buttons">
             <a href="#Enter"><div class="button_sign_in">
-             <div class="button-text">Войти</div>
-        </div></a>
+                <button class='enter'>Войти</button>
+           </div></a>
         <div class="basket">
                 <a href="#basket" class="hdr-link"><img src="svg/basket.svg" alt="basket"></a>
              </div>
@@ -27,134 +27,112 @@
      </div>
     </div>
 </header>
-
 <div class="search-section">
     <form class="search-container" action="#">
         <input class="search-line" name="s" placeholder="Поиск по ресторанам и кухням" type="search">
     </form>
 </div>
     <div class="page-name">
-        <div class="page-name_text">Рестораны в Москве
+        <div class="page-name_container">
+            <div class="page-name_text">Рестораны в Москве
+            </div>
         </div>
 </div>   
 <div class="cards-container">
     <div class="container">
-    <div class="row">
-
-        <div class="col-xs-12 col-md-6 col-lg-4">
-    <div class="card">
-    <figure>
-    <img class="img_card" src="img/MacDonald-newspapers.png" alt="MacDonald-newspapers">
-</figure>
-    <div class="card-name">Макдоналдс - Газетный
-    </div>
-    <div class="card-discription">₽₽ • Бургеры
-    </div>
-    <div class="card-time">25-35 мин</div>
-</div>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/Dimsum.png" alt="Dimsum">
-    </figure>
-        <div class="card-name">DimSum & Co - ЦДМ
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <acticle class="card">
+                    <figure>
+                        <img class="img_card" src="img/MacDonald-newspapers.png" alt="MacDonald-newspapers">
+                    </figure>
+                    <div class="card-name">Макдоналдс - Газетный</div>
+                    <div class="card-discription">₽₽ • Бургеры</div>
+                    <div class="card-time">25-35 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                        <img class="img_card" src="img/Dimsum.png" alt="Dimsum">
+                    </figure>
+                    <div class="card-name">DimSum & Co - ЦДМ</div>
+                    <div class="card-discription">₽ • Японская • Китайская • Азиатская</div>
+                    <div class="card-time">40-50 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                        <img class="img_card" src="img/DvijOK.png" alt="DvijOK">
+                    </figure>
+                    <div class="card-name">ДвижОК - Манежная</div>
+                    <div class="card-discription">₽ • Американская • Европейская</div>
+                    <div class="card-time">35-45 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                    <img class="img_card" src="img/Nya.png" alt="Nya">
+                    </figure>
+                    <div class="card-name">НЯ - NHA</div>
+                    <div class="card-discription">₽₽ • Вьетнамская</div>
+                    <div class="card-time">30-40 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                        <img class="img_card" src="img/Tochka_Czi.png" alt="Tochka_Czi">
+                    </figure>
+                    <div class="card-name"> Точка Дзы - Цветной</div>
+                    <div class="card-discription">₽₽ • Вьетнамская</div>
+                    <div class="card-time">40-50 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                        <img class="img_card" src="img/Cinnabon.png" alt="Cinnabon">
+                    </figure>
+                    <div class="card-name">Cinnabon</div>
+                    <div class="card-discription">₽ • Выпечка • Десерты • Капкейки </div>
+                    <div class="card-time">25-35 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                        <img class="img_card" src="img/pizzelove.png" alt="pizzelove">
+                    </figure>
+                    <div class="card-name">PIZZELOVE</div>
+                    <div class="card-discription">₽₽ • Пицца</div>
+                    <div class="card-time">15-25 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                        <img class="img_card" src="img/Zyu-cafe.png" alt="Zyu-cafe">
+                    </figure>
+                    <div class="card-name">Zю - Тверская</div>
+                    <div class="card-discription">₽₽ • Японская</div>
+                    <div class="card-time">25-35 мин</div>
+                </article>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <figure>
+                        <img class="img_card" src="img/Bar_BQ.png" alt="Bar_BQ">
+                    </figure>
+                    <div class="card-name">Bar BQ Cafe - Манежная</div>
+                    <div class="card-discription">₽₽₽ • Манежная</div>
+                    <div class="card-time">30-40 мин</div>
+                </article>
+            </div>
         </div>
-        <div class="card-discription">₽ • Японская • Китайская • Азиатская
-        </div>
-        <div class="card-time">40-50 мин</div>
-    </div>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/DvijOK.png" alt="DvijOK">
-    </figure>
-        <div class="card-name">
-        </div>
-        <div class="card-discription">₽ • Американская • Европейская
-        </div>
-        <div class="card-time">35-45 мин</div>
-    </div>
-</div>
-<div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/Nya.png" alt="Nya">
-    </figure>
-        <div class="card-name">
-        </div>
-        <div class="card-discription">₽₽ • Вьетнамская
-        </div>
-        <div class="card-time">30-40 мин</div>
-    </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/Tochka_Czi.png" alt="Tochka_Czi">
-    </figure>
-        <div class="card-name">
-        </div>
-        <div class="card-discription">₽₽ • Вьетнамская
-        </div>
-        <div class="card-time">40-50 мин</div>
-    </div>
-    </div>
-    <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/Cinnabon.png" alt="Cinnabon">
-    </figure>
-        <div class="card-name">
-        </div>
-        <div class="card-discription">₽ • Выпечка • Десерты • Капкейки 
-        </div>
-        <div class="card-time">25-35 мин</div>
-    </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/pizzelove.png" alt="pizzelove">
-    </figure>
-        <div class="card-name">
-        </div>
-        <div class="card-discription">₽₽ • Пицца
-        </div>
-        <div class="card-time">15-25 мин</div>
-    </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/Zyu-cafe.png" alt="Zyu-cafe">
-    </figure>
-        <div class="card-name">
-        </div>
-        <div class="card-discription">₽₽ • Японская
-        </div>
-        <div class="card-time">25-35 мин</div>
-    </div>
-    </div>
-
-    <div class="col-xs-12 col-md-6 col-lg-4">
-        <div class="card">
-        <figure>
-        <img class="img_card" src="img/Bar_BQ.png" alt="Bar_BQ">
-    </figure>
-        <div class="card-name">
-        </div>
-        <div class="card-discription">₽₽₽ • Манежная
-        </div>
-        <div class="card-time">30-40 мин</div>
-    </div>
-    </div>
-    </div>
-</div> 
+    </div> 
 </div>
 <footer>
     <div class="container-footer">
