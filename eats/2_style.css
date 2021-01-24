@@ -405,6 +405,7 @@ a {
     justify-content: space-between;
     max-width: 960px;
     width:100%;
+    padding: 0 8px;
    }
    .logo {
        width: 120px;
@@ -454,6 +455,7 @@ a {
         margin: 0 auto;
         max-width: 960px;
         width: 100%;
+        padding: 0 8px;
               }
 
     .search-line {
@@ -469,11 +471,13 @@ a {
         height: 34px;
         margin-top: 56px;
         margin-bottom: 16px;
+        
       }
       .page-name_text {
         margin: 0 auto;
         max-width: 960px;
         width: 100%;
+        padding: 0 8px;
 
         color: #1d1d1d;
         font-size: 22px;
@@ -495,8 +499,9 @@ a {
           margin: 0 auto;
       }
       .img_card {
-margin-bottom: 16px;
-
+          margin-bottom: 16px;
+          display: block;
+          width: 100%
       }
 
       .card-name {
