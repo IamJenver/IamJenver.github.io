@@ -435,7 +435,10 @@ header {
     padding-top: 40 px;
     height: 100%;
     width: 100%;
-    text-decoration: none;
+    }
+    a.header-enter {
+        text-decoration: none;
+        color: black;
     }
         /*-------------fixed menu end----------------*/
         /*------------- searh start------------------*/
@@ -509,6 +512,10 @@ header {
         line-height: 24px;
         font-family: 'Roboto', sans-serif;
       }
+    a.card-reference {
+        text-decoration: none;
+        color:black;
+    }
 
       .card-discription {
         color: #626262;
@@ -539,6 +546,4 @@ header {
         height: 116px;
         border-bottom: 1px solid white;
      }
-     .logo {
-        padding: 0 8 px;
-     }
+     
